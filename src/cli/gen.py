@@ -1,6 +1,7 @@
 import random
 
-from typer import Option, Typer
+# Import Option later
+from typer import Typer
 
 from src.namelists import names_uk
 
