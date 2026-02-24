@@ -9,6 +9,15 @@ fornames_m_de = [
     "Tobias",
     "Jan",
     "Thorsten",
+    "Dirk",
+    "Jürgen",
+    "Erhard",
+    "Jens",
+    "Heiko",
+    "Bernhard",
+    "Carsten",
+    "Fabian",
+    "Fritz",
 ]
 fornames_f_de = ["Anna", "Sabine", "Katrin"]
 surnames_de = [
