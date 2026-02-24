@@ -19,7 +19,7 @@ import src.namelists.names_uk
 )
 def generate_name(language, gender):
     if language.lower() == "random":
-        language = random.choice(["uk, de"])
+        language = random.choice(["uk"])
     if language.lower() == "uk":
         if gender.lower() == "m":
             name = src.namelists.names_uk.generate_name_m_uk()
