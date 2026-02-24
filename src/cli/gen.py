@@ -1,31 +1,35 @@
 import random
 
-# Import Option later
-from typer import Typer
+import click
 
-from src.namelists import names_uk
-
-app = Typer()
+import src.namelists.names_uk
 
 
-@app.command(
+@click.command()
+@click.option(
     "--language",
-    help="Specifies which language (in 2-digit ISO 639 codes) the name should come from",
+    help="Specifies which language (in 2-digit ISO 639 codes) the name should come from. Use 'random' for random selection. Default is 'random'",
+    default="random",
 )
-def language():
-    if language == "uk":
-        name = random.choice(names_uk.generate_name_m_uk())
-        return print(f"{name}")
-
-
-def gender():
-    if gender == "m" and language == "uk":
-        name = random.choice(names_uk.generate_name_m_uk())
-        return print(f"{name}")
-    if gender == "f" and language == "uk":
-        name = random.choice(names_uk.generate_name_f_uk())
-        return print(f"{name}")
+@click.option(
+    "--gender",
+    help="Specifies the gender of the name (m for male, f for female)",
+    type=click.Choice(["m", "f"], case_sensitive=False),
+    required=True,
+)
+def generate_name(language, gender):
+    if language.lower() == "random":
+        language = random.choice(["uk, de"])
+    if language.lower() == "uk":
+        if gender.lower() == "m":
+            name = src.namelists.names_uk.generate_name_m_uk()
+            click.echo(name)
+        elif gender.lower() == "f":
+            name = src.namelists.names_uk.generate_name_f_uk()
+            click.echo(name)
+    else:
+        click.echo("Language code not supported.")
 
 
 if __name__ == "__main__":
-    app()
+    generate_name()
