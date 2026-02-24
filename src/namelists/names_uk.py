@@ -21,9 +21,30 @@ fornames_m_uk = [
     "Borys",
     "Mykola",
     "Bohdan",
+    "Oleksander",
+    "Kyrylo",
+    "Vitalii",
+    "Oleksandr",
+    "Artem",
 ]
 
-fornames_f_uk = ["Iryna", "Halyna", "Kateryna", "Oksana", "Khrystyna"]
+fornames_f_uk = [
+    "Iryna",
+    "Halyna",
+    "Kateryna",
+    "Oksana",
+    "Khrystyna",
+    "Olha",
+    "Oleksandra",
+    "Mariia",
+    "Sofiia",
+    "Tatiana",
+    "Svitlana",
+    "Olena",
+    "Liudmyla",
+    "Hanna",
+    "Larysa",
+]
 
 patronymics_m_uk = ["Ivanovych", "Dmytrovych", "Vasylovych", "Serhiiovych"]
 
