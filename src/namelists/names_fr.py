@@ -10,4 +10,13 @@ fornames_m_fr = [
     "Frédéric",
 ]
 
+fornames_m_fr = [
+    "Marie",
+    "Jeanne",
+    "Marguerite",
+    "Élisabeth",
+    "Jacqueline",
+    "Anne-Sophie",
+]
+
 surnames_fr = ["Delacroix", "Dubois"]
