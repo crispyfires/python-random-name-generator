@@ -54,6 +54,37 @@ fornames_m_pl = [
     "Kazimierz",
 ]
 
+fornames_f_pl = [
+    "Czesława",
+    "Bronisława",
+    "Jarosława",
+    "Janina",
+    "Izabela",
+    "Jadwiga",
+    "Barbara",
+    "Bożena",
+    "Renata",
+    "Dagmara",
+    "Danuta",
+    "Dominika",
+    "Elżbieta",
+    "Krystyna",
+    "Małgorzata",
+    "Urszula",
+    "Teresa",
+    "Magdalena",
+    "Katarzyna",
+    "Agnieszka",
+    "Mirosława",
+    "Monika",
+    "Edyta",
+    "Marzena",
+    "Zofia",
+    "Iwona",
+    "Karolina",
+    "Kazimiera",
+]
+
 surnames_m_pl = [
     "Bratkowski",
     "Kowalski",
@@ -76,6 +107,28 @@ surnames_m_pl = [
     "Olszewski",
 ]
 
+surnames_f_pl = [
+    "Bratkowska",
+    "Kowalska",
+    "Balińska",
+    "Buczkowska",
+    "Burzyńska",
+    "Drągowska",
+    "Lewandowska",
+    "Kamińska",
+    "Zieliński",
+    "Szymańska",
+    "Kozłowska",
+    "Jankowska",
+    "Wojciechowska",
+    "Kwiatkowska",
+    "Piotrowska",
+    "Grabowska",
+    "Majewska",
+    "Jabłońska",
+    "Olszewska",
+]
+
 surnames_n_pl = [
     "Dziura",
     "Dutkiewicz",
@@ -90,6 +143,7 @@ surnames_n_pl = [
 ]
 
 surnames_mn_pl = surnames_m_pl + surnames_n_pl
+surnames_fn_pl = surnames_f_pl + surnames_n_pl
 
 
 def generate_name_m_pl():
@@ -97,3 +151,10 @@ def generate_name_m_pl():
     middlename_m_pl = random.choice(fornames_m_pl)
     surname_m_pl = random.choice(surnames_mn_pl)
     return forname_m_pl + " " + middlename_m_pl + " " + surname_m_pl
+
+
+def generate_name_f_pl():
+    forname_f_pl = random.choice(fornames_f_pl)
+    middlename_f_pl = random.choice(fornames_f_pl)
+    surname_f_pl = random.choice(surnames_f_pl)
+    return forname_f_pl + " " + middlename_f_pl + " " + surname_f_pl
