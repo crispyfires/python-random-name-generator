@@ -71,13 +71,13 @@ surnames_de = [
 
 def generate_name_m_de():
     forname_m_de = random.choice(fornames_m_de)
-    middlename_m_de = random.choice(forname_m_de)
+    middlename_m_de = random.choice(fornames_m_de)
     surname_de = random.choice(surnames_de)
     return forname_m_de + " " + middlename_m_de + " " + surname_de
 
 
 def generate_name_f_de():
     forname_f_de = random.choice(fornames_f_de)
-    middlename_f_de = random.choice(forname_f_de)
+    middlename_f_de = random.choice(fornames_f_de)
     surname_de = random.choice(surnames_de)
     return forname_f_de + " " + middlename_f_de + " " + surname_de
