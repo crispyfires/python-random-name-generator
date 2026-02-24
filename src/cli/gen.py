@@ -2,6 +2,7 @@ import random
 
 import click
 
+import src.namelists.names_de
 import src.namelists.names_pl
 import src.namelists.names_uk
 
@@ -20,13 +21,20 @@ import src.namelists.names_uk
 )
 def generate_name(language, gender):
     if language.lower() == "random":
-        language = random.choice(["pl", "uk"])
+        language = random.choice(["de", "pl", "uk"])
     if language.lower() == "uk":
         if gender.lower() == "m":
             name = src.namelists.names_uk.generate_name_m_uk()
             click.echo(name)
         elif gender.lower() == "f":
             name = src.namelists.names_uk.generate_name_f_uk()
+            click.echo(name)
+    elif language.lower() == "de":
+        if gender.lower() == "m":
+            name = src.namelists.names_de.generate_name_m_de()
+            click.echo(name)
+        elif gender.lower() == "f":
+            name = src.namelists.names_de.generate_name_f_de()
             click.echo(name)
     elif language.lower() == "pl":
         if gender.lower() == "m":
