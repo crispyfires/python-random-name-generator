@@ -21,7 +21,7 @@ forenames_m_uk = [
     "Borys",
     "Mykola",
     "Bohdan",
-    "Oleksander",
+    "Oleksandr",
     "Kyrylo",
     "Vitalii",
     "Oleksandr",
@@ -46,9 +46,37 @@ forenames_f_uk = [
     "Larysa",
 ]
 
-patronymics_m_uk = ["Ivanovych", "Dmytrovych", "Vasylovych", "Serhiiovych"]
+patronymics_m_uk = [
+    "Ivanovych",
+    "Dmytrovych",
+    "Vasylovych",
+    "Serhiiovych",
+    "Mykolaiovych",
+    "Andriiovych",
+    "Semenovych",
+    "Petrovych",
+    "Volodymyrovych",
+    "Valeriiovych",
+    "Mykolaiovych",
+]
 
-patronymics_f_uk = ["Ivanivna", "Dmytrivna", "Vasylivna", "Serhiivna"]
+patronymics_f_uk = [
+    "Ivanivna",
+    "Dmytrivna",
+    "Vasylivna",
+    "Serhiivna",
+    "Hryhorivna",
+    "Volodymyrivna",
+    "Vladyslavivna",
+    "Petrivna",
+    "Mykhailivna",
+    "Ivanivna",
+    "Yuriivna",
+    "Vasylivna",
+    "Yaroslavivna",
+    "Ihorivna",
+    "Stepanivna",
+]
 
 surnames_m_uk = [
     "Voloshyn",
