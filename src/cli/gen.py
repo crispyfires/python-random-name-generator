@@ -14,37 +14,46 @@ import src.namelists.names_uk
     default="random",
 )
 @click.option(
+    "--number",
+    help="Specifies amount of names outputted (in numerals). Default is '1'",
+    type=int,
+    default="1",
+)
+@click.option(
     "--gender",
     help="Specifies the gender of the name (m for male, f for female)",
     type=click.Choice(["m", "f"], case_sensitive=False),
     required=True,
 )
-def generate_name(language, gender):
+def generate_name(language, gender, number):
     if language.lower() == "random":
         language = random.choice(["de", "pl", "uk"])
-    if language.lower() == "uk":
-        if gender.lower() == "m":
-            name = src.namelists.names_uk.generate_name_m_uk()
-            click.echo(name)
-        elif gender.lower() == "f":
-            name = src.namelists.names_uk.generate_name_f_uk()
-            click.echo(name)
-    elif language.lower() == "de":
-        if gender.lower() == "m":
-            name = src.namelists.names_de.generate_name_m_de()
-            click.echo(name)
-        elif gender.lower() == "f":
-            name = src.namelists.names_de.generate_name_f_de()
-            click.echo(name)
-    elif language.lower() == "pl":
-        if gender.lower() == "m":
-            name = src.namelists.names_pl.generate_name_m_pl()
-            click.echo(name)
-        elif gender.lower() == "f":
-            name = src.namelists.names_pl.generate_name_f_pl()
-            click.echo(name)
-    else:
-        click.echo("Language code not supported.")
+
+    names = []
+    for _ in range(number):
+        if language.lower() == "uk":
+            if gender.lower() == "m":
+                name = src.namelists.names_uk.generate_name_m_uk()
+            elif gender.lower() == "f":
+                name = src.namelists.names_uk.generate_name_f_uk()
+        elif language.lower() == "de":
+            if gender.lower() == "m":
+                name = src.namelists.names_de.generate_name_m_de()
+            elif gender.lower() == "f":
+                name = src.namelists.names_de.generate_name_f_de()
+        elif language.lower() == "pl":
+            if gender.lower() == "m":
+                name = src.namelists.names_pl.generate_name_m_pl()
+            elif gender.lower() == "f":
+                name = src.namelists.names_pl.generate_name_f_pl()
+        else:
+            click.echo("Language code not supported.")
+            return
+
+        names.append(name)
+
+    for name in names:
+        click.echo(name)
 
 
 if __name__ == "__main__":
