@@ -114,3 +114,4 @@ build/namegen/warn-namegen.txt
 build/namegen/localpycs/struct.pyc
 build/namegen/Analysis-00.toc
 build/namegen/xref-namegen.html
+dist/namegen
