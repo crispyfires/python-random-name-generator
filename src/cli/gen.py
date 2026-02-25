@@ -5,6 +5,7 @@ import click
 import src.namelists.names_de
 import src.namelists.names_en
 import src.namelists.names_pl
+import src.namelists.names_ru
 import src.namelists.names_uk
 
 
@@ -52,6 +53,11 @@ def generate_name(language, gender, number):
                 name = src.namelists.names_pl.generate_name_m_pl()
             elif gender.lower() == "f":
                 name = src.namelists.names_pl.generate_name_f_pl()
+        elif language.lower() == "ru":
+            if gender.lower() == "m":
+                name = src.namelists.names_ru.generate_name_m_ru()
+            elif gender.lower() == "f":
+                name = src.namelists.names_ru.generate_name_f_ru()
         else:
             click.echo("Language code not supported.")
             return

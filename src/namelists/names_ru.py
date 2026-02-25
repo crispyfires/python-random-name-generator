@@ -61,7 +61,7 @@ patronymics_m_ru = [
     "Vladimirovich",
     "Viktorovich",
     "Nikolayevich",
-    "Yaroslav",
+    "Yaroslavovich",
     "Vasilyevich",
     "Vladislavovich",
     "Vitalyevich",
@@ -84,6 +84,41 @@ patronymics_m_ru = [
     "Leonidovich",
     "Nikitich",
     "Petrovich",
+]
+
+patronymics_f_ru = [
+    "Dmitriyevna",
+    "Antonevna",
+    "Anatolyevna",
+    "Konstantinovna",
+    "Ilyinichna",
+    "Ivanovna",
+    "Vladimirovna",
+    "Viktorovna",
+    "Nikolayevna",
+    "Yaroslavovna",
+    "Vasilyevna",
+    "Vladislavovna",
+    "Vitalyevna",
+    "Valentinovna",
+    "Vadimovna",
+    "Semyonovna",
+    "Sergeyevna",
+    "Ruslanovna",
+    "Romanovna",
+    "Mikhailovna",
+    "Maksimovna",
+    "Lvovna",
+    "Kirillovna",
+    "Igorevna",
+    "Arkadyevna",
+    "Arsenyevna",
+    "Andreyevna",
+    "Aleksandrovna",
+    "Alekseyevna",
+    "Leonidovna",
+    "Nikitichna",
+    "Petrovna",
 ]
 
 surnames_m_ru = [
@@ -115,9 +150,45 @@ surnames_m_ru = [
     "Vlasov",
 ]
 
+surnames_f_ru = [
+    "Ivanova",
+    "Kuznetsova",
+    "Petrova",
+    "Smirnova",
+    "Popova",
+    "Belova",
+    "Volkova",
+    "Novikova",
+    "Morozova",
+    "Pavlova",
+    "Vasileva",
+    "Romanova",
+    "Makarova",
+    "Stepanova",
+    "Zakharova",
+    "Orlova",
+    "Medvedveva",
+    "Borisova",
+    "Antonova",
+    "Zhukova",
+    "Konstantinova",
+    "Kirillova",
+    "Semyonova",
+    "Stepanova",
+    "Pavlova",
+    "Vlasova",
+]
+
 
 def generate_name_m_ru():
     forename_m_ru = random.choice(forenames_m_ru)
     patronymic_m_ru = random.choice(patronymics_m_ru)
     surname_m_ru = random.choice(surnames_m_ru)
     return forename_m_ru + " " + patronymic_m_ru + " " + surname_m_ru
+
+
+def generate_name_f_ru():
+    forename_f_ru = random.choice(forenames_f_ru)
+    patronymic_f_ru = random.choice(patronymics_f_ru)
+    surname_f_ru = random.choice(surnames_f_ru)
+    return forename_f_ru + " " + patronymic_f_ru + " " + surname_f_ru
