@@ -1,6 +1,6 @@
 import random
 
-fornames_m_de = [
+forenames_m_de = [
     "Johann",
     "Hans",
     "Martin",
@@ -19,7 +19,7 @@ fornames_m_de = [
     "Fabian",
     "Fritz",
 ]
-fornames_f_de = ["Anna", "Sabine", "Katrin"]
+forenames_f_de = ["Anna", "Sabine", "Katrin"]
 surnames_de = [
     "Müller",
     "Schmidt",
@@ -70,14 +70,14 @@ surnames_de = [
 
 
 def generate_name_m_de():
-    forname_m_de = random.choice(fornames_m_de)
-    middlename_m_de = random.choice(fornames_m_de)
+    forename_m_de = random.choice(forenames_m_de)
+    middlename_m_de = random.choice(forenames_m_de)
     surname_de = random.choice(surnames_de)
-    return forname_m_de + " " + middlename_m_de + " " + surname_de
+    return forename_m_de + " " + middlename_m_de + " " + surname_de
 
 
 def generate_name_f_de():
-    forname_f_de = random.choice(fornames_f_de)
-    middlename_f_de = random.choice(fornames_f_de)
+    forename_f_de = random.choice(forenames_f_de)
+    middlename_f_de = random.choice(forenames_f_de)
     surname_de = random.choice(surnames_de)
-    return forname_f_de + " " + middlename_f_de + " " + surname_de
+    return forename_f_de + " " + middlename_f_de + " " + surname_de
