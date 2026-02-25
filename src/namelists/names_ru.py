@@ -111,6 +111,8 @@ surnames_m_ru = [
     "Kirillov",
     "Semyonov",
     "Stepanov",
+    "Pavlov",
+    "Vlasov",
 ]
 
 
