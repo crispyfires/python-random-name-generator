@@ -12,3 +12,7 @@ src/__pycache__/__init__.cpython-314.pyc
 src/cli/__pycache__/__init__.cpython-314.pyc
 src/namelists/__pycache__/__init__.cpython-314.pyc
 src/namelists/__pycache__/names_en.cpython-314.pyc
+src/namelists/__pycache__/name.cpython-314.pyc
+src/namelists/__pycache__/name_functions.cpython-314.pyc
+src/namelists/__pycache__/names_fr.cpython-314.pyc
+src/namelists/__pycache__/names.cpython-314.pyc
