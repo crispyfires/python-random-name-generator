@@ -52,6 +52,20 @@ forenames_m_pl = [
     "Przemysław",
     "Bartosz",
     "Kazimierz",
+    "Adam",
+    "Robert",
+    "Kamil",
+    "Konrad",
+    "Damian",
+    "Ryszard",
+    "Dawid",
+    "Krystian",
+    "Ireneusz",
+    "Michael",
+    "Kacper",
+    "Remigiusz",
+    "Eugeniusz",
+    "Zdzisław",
 ]
 
 forenames_f_pl = [
@@ -83,6 +97,24 @@ forenames_f_pl = [
     "Iwona",
     "Karolina",
     "Kazimiera",
+    "Anna",
+    "Joanna",
+    "Ewa",
+    "Marta",
+    "Dorota",
+    "Beata",
+    "Justyna",
+    "Agata",
+    "Paulina",
+    "Maria",
+    "Jolanta",
+    "Ewalina",
+    "Dominika",
+    "Kinga",
+    "Weronika",
+    "Olga",
+    "Jagoda",
+    "Zuzanna",
 ]
 
 surnames_m_pl = [
@@ -105,6 +137,7 @@ surnames_m_pl = [
     "Majewski",
     "Jabłoński",
     "Olszewski",
+    "Lipiński",
 ]
 
 surnames_f_pl = [
@@ -127,6 +160,7 @@ surnames_f_pl = [
     "Majewska",
     "Jabłońska",
     "Olszewska",
+    "Lipińska",
 ]
 
 surnames_n_pl = [
@@ -140,6 +174,8 @@ surnames_n_pl = [
     "Pietrzyk",
     "Cichoń",
     "Rybak",
+    "Szczepaniak",
+    "Kaczmarczyk",
 ]
 
 surnames_mn_pl = surnames_m_pl + surnames_n_pl
