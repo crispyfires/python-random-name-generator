@@ -2,7 +2,7 @@
  Generates a random name from a pre-defined wordlist on the CLI. Has options to specify number of names, language of origin, and gender using command-line arguments. 
 
 ```
-Usage: gen [OPTIONS]
+Usage: namegen [OPTIONS]
 
 Options:
   --language TEXT   Specifies which language (in 2-digit ISO 639 codes) the
