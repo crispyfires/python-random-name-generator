@@ -1,3 +1,5 @@
+import random
+
 forenames_m_es = [
     "Adrián",
     "Alberto",
@@ -1263,3 +1265,17 @@ surnames_es = [
     "Nogal",
     "Esponda",
 ]
+
+
+def generate_name_m_es():
+    forename_m_es = random.choice(forenames_m_es)
+    surname1_m_es = random.choice(surnames_es)
+    surname2_m_es = random.choice(surnames_es)
+    return forename_m_es + " " + surname1_m_es + " " + surname2_m_es
+
+
+def generate_name_f_es():
+    forename_f_es = random.choice(forenames_f_es)
+    surname1_f_es = random.choice(surnames_es)
+    surname2_f_es = random.choice(surnames_es)
+    return forename_f_es + " " + surname1_f_es + " " + surname2_f_es
