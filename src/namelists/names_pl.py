@@ -1,6 +1,6 @@
 import random
 
-fornames_m_pl = [
+forenames_m_pl = [
     "Radosław",
     "Czesław",
     "Grzegorz",
@@ -54,7 +54,7 @@ fornames_m_pl = [
     "Kazimierz",
 ]
 
-fornames_f_pl = [
+forenames_f_pl = [
     "Czesława",
     "Bronisława",
     "Jarosława",
@@ -147,14 +147,14 @@ surnames_fn_pl = surnames_f_pl + surnames_n_pl
 
 
 def generate_name_m_pl():
-    forname_m_pl = random.choice(fornames_m_pl)
-    middlename_m_pl = random.choice(fornames_m_pl)
+    forename_m_pl = random.choice(forenames_m_pl)
+    middlename_m_pl = random.choice(forenames_m_pl)
     surname_m_pl = random.choice(surnames_mn_pl)
-    return forname_m_pl + " " + middlename_m_pl + " " + surname_m_pl
+    return forename_m_pl + " " + middlename_m_pl + " " + surname_m_pl
 
 
 def generate_name_f_pl():
-    forname_f_pl = random.choice(fornames_f_pl)
-    middlename_f_pl = random.choice(fornames_f_pl)
+    forename_f_pl = random.choice(forenames_f_pl)
+    middlename_f_pl = random.choice(forenames_f_pl)
     surname_f_pl = random.choice(surnames_f_pl)
-    return forname_f_pl + " " + middlename_f_pl + " " + surname_f_pl
+    return forename_f_pl + " " + middlename_f_pl + " " + surname_f_pl
