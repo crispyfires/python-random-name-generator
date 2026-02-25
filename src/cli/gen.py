@@ -4,6 +4,7 @@ import click
 
 import src.namelists.names_de
 import src.namelists.names_en
+import src.namelists.names_es
 import src.namelists.names_fr
 import src.namelists.names_pl
 import src.namelists.names_ru
@@ -54,6 +55,11 @@ def generate_name(language, gender, number):
                 name = src.namelists.names_en.generate_name_m_en()
             elif gender.lower() == "f":
                 name = src.namelists.names_en.generate_name_f_en()
+        elif language.lower() == "es":
+            if gender.lower() == "m":
+                name = src.namelists.names_es.generate_name_m_es()
+            elif gender.lower() == "f":
+                name = src.namelists.names_es.generate_name_f_es()
         elif language.lower() == "pl":
             if gender.lower() == "m":
                 name = src.namelists.names_pl.generate_name_m_pl()
