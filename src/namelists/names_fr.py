@@ -1,3 +1,5 @@
+import random
+
 forenames_m_fr = [
     "Jacques",
     "Jean",
@@ -29,7 +31,7 @@ forenames_m_fr = [
     "Louis",
 ]
 
-forenames_m_fr = [
+forenames_f_fr = [
     "Marie",
     "Jeanne",
     "Marguerite",
@@ -84,3 +86,15 @@ surnames_fr = [
     "Fortin",
     "Morin",
 ]
+
+
+def generate_name_m_fr():
+    forename_m_fr = random.choice(forenames_m_fr)
+    surname_f_en = random.choice(surnames_fr)
+    return forename_m_fr + " " + surname_f_en
+
+
+def generate_name_f_fr():
+    forename_f_fr = random.choice(forenames_f_fr)
+    surname_f_fr = random.choice(surnames_fr)
+    return forename_f_fr + " " + surname_f_fr
