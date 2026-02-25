@@ -1,0 +1,7 @@
+[project]
+name = "random-name-generator"
+version = "1.0.0"
+dependencies = [
+  "click",
+]
+requires-python = ">= 3.3"
