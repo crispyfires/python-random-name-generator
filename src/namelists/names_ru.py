@@ -1,6 +1,6 @@
 import random
 
-fornames_m_ru = [
+forenames_m_ru = [
     "Dmitry",
     "Vladislav",
     "Vladimir",
@@ -32,7 +32,7 @@ fornames_m_ru = [
     "Kirill",
 ]
 
-fornames_f_ru = [
+forenames_f_ru = [
     "Lyudmila",
     "Olga",
     "Darya",
@@ -115,7 +115,7 @@ surnames_m_ru = [
 
 
 def generate_name_m_ru():
-    forname_m_ru = random.choice(fornames_m_ru)
+    forename_m_ru = random.choice(forenames_m_ru)
     patronymic_m_ru = random.choice(patronymics_m_ru)
     surname_m_ru = random.choice(surnames_m_ru)
-    return forname_m_ru + " " + patronymic_m_ru + " " + surname_m_ru
+    return forename_m_ru + " " + patronymic_m_ru + " " + surname_m_ru
