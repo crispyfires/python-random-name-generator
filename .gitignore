@@ -101,3 +101,16 @@ output/gen/_internal/python3.14/lib-dynload/_bisect.cpython-314-x86_64-linux-gnu
 output/gen/_internal/python3.14/lib-dynload/math.cpython-314-x86_64-linux-gnu.so
 output/gen/_internal/python3.14/lib-dynload/mmap.cpython-314-x86_64-linux-gnu.so
 output/gen/_internal/python3.14/lib-dynload/_hmac.cpython-314-x86_64-linux-gnu.so
+build/namegen/EXE-00.toc
+build/namegen/PKG-00.toc
+build/namegen/PYZ-00.pyz
+build/namegen/PYZ-00.toc
+build/namegen/base_library.zip
+build/namegen/localpycs/pyimod01_archive.pyc
+build/namegen/localpycs/pyimod03_ctypes.pyc
+build/namegen/localpycs/pyimod02_importers.pyc
+build/namegen/namegen.pkg
+build/namegen/warn-namegen.txt
+build/namegen/localpycs/struct.pyc
+build/namegen/Analysis-00.toc
+build/namegen/xref-namegen.html
