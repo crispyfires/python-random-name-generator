@@ -1,7 +1,6 @@
 # python-random-name-generator
  Generates a random name from a pre-defined wordlist on the CLI. Has options to specify number of names, language of origin, and gender using command-line arguments. 
 
- Arguments:
 Usage: gen [OPTIONS]
 
 Options:
