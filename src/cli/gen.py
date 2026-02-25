@@ -3,6 +3,7 @@ import random
 import click
 
 import src.namelists.names_de
+import src.namelists.names_en
 import src.namelists.names_pl
 import src.namelists.names_uk
 
@@ -27,7 +28,7 @@ import src.namelists.names_uk
 )
 def generate_name(language, gender, number):
     if language.lower() == "random":
-        language = random.choice(["de", "pl", "uk"])
+        language = random.choice(["de", "en", "pl", "uk"])
 
     names = []
     for _ in range(number):
@@ -41,6 +42,11 @@ def generate_name(language, gender, number):
                 name = src.namelists.names_de.generate_name_m_de()
             elif gender.lower() == "f":
                 name = src.namelists.names_de.generate_name_f_de()
+        elif language.lower() == "en":
+            if gender.lower() == "m":
+                name = src.namelists.names_en.generate_name_m_en()
+            elif gender.lower() == "f":
+                name = src.namelists.names_en.generate_name_f_en()
         elif language.lower() == "pl":
             if gender.lower() == "m":
                 name = src.namelists.names_pl.generate_name_m_pl()
